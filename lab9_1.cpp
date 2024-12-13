@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> //For using setw(), setprecision(), ...
+#include <iomanip>
 
 using namespace std;
 
@@ -16,10 +16,6 @@ int main()
 	cout << "Enter amount you can pay per year: ";
 	cin >> payment;
 
-	// use 'setw' to set width of table and 'left' to set left-alignment
-	// you can change input argument of 'setw()' to see the effect
-	// Try to change from 'left' to 'right' and see the effect
-
 	int year = 0;
 	double PrevBalance = loan, Interest, Total, Payment, NewBalance = loan;
 	cout << setw(13) << left << "EndOfYear#";
@@ -29,9 +25,6 @@ int main()
 	cout << setw(13) << left << "Payment";
 	cout << setw(13) << left << "NewBalance";
 	cout << "\n";
-
-	// use 'fixed' and 'setprecision' to fix the number of decimal digits for displaying
-	// you can change input argument of 'setprecision()' to see the effect
 
 	while (NewBalance > 0)
 	{

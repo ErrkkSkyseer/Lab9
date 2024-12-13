@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Write the function printO() here
 void printO(int x, int y)
 {
 	if (x <= 0 || y <= 0)
